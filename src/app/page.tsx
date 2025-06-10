@@ -42,7 +42,7 @@ export default function Home() {
         {/* Header */}
         <header className="grid grid-cols-2 p-6">
           <div>
-            <div className="text-lg font-bold">ANISH KANCHERLA</div>
+            <div className="text-lg font-bold">Anish Kancherla</div>
           </div>
           <div className="text-right">
             <div className="text-lg font-bold cursor-pointer hover:underline"
@@ -60,8 +60,8 @@ export default function Home() {
               student at UCR. I mainly use typescript/next.js. 
             </div>
             <div className="text-2xl md:text-3xl leading-relaxed">
-              Outside of coding, I'm interested in clothing design, working out,
-              and home-made cafe drinks.
+              Outside of coding, I'm interested in clothing design, home-made cafe drinks,
+              and working out.
             </div>
           </div>
         </main>
