@@ -30,8 +30,8 @@ export default function Home() {
       <header className="w-full py-8 px-8 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 items-start">
           {/* logo placeholder  */}
-          <div className="text-4xl font-bold">
-            56
+          <div className="text-8xl font-bold font-stamp-rpsk">
+            *
           </div>
 
           {/* header middle */}
