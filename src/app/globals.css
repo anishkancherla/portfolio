@@ -62,7 +62,7 @@
 @font-face {
   font-family: 'Stamp RPSK';
   src: url('/fonts/stamp-rpsk.woff2') format('woff2'),
-       url('/fonts/stamp-rpsk.woff') format('woff');
+    url('/fonts/stamp-rpsk.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

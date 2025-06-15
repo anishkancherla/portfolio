@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'stamp-rpsk': ['Stamp RPSK', 'sans-serif'],
+        'gaisyr': ['Gaisyr', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
     },
   },
