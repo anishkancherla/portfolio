@@ -8,6 +8,11 @@ interface OpenSections {
   projects: boolean;
 }
 
+interface JobDescriptions {
+  abbvie: boolean;
+  getVitals: boolean;
+}
+
 export default function Home() {
   const [openSections, setOpenSections] = useState<OpenSections>({
     experience: true,
@@ -15,10 +20,22 @@ export default function Home() {
     projects: true,
   });
 
+  const [jobDescriptions, setJobDescriptions] = useState<JobDescriptions>({
+    abbvie: false,
+    getVitals: false,
+  });
+
   const toggleSection = (section: keyof OpenSections) => {
     setOpenSections(prev => ({
       ...prev,
       [section]: !prev[section]
+    }));
+  };
+
+  const toggleJobDescription = (job: keyof JobDescriptions) => {
+    setJobDescriptions(prev => ({
+      ...prev,
+      [job]: !prev[job]
     }));
   };
 
@@ -37,7 +54,8 @@ export default function Home() {
             {/* */}
             <div>
               <div className="text-lg">Anish Kancherla</div>
-              <div className="text-lg">PORTFOLIO</div>
+              <div className="text-lg">LINKEDIN</div>
+              <div className="text-lg">GITHUB</div>
             </div>
 
             {/* contact right side */}
@@ -72,22 +90,50 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
           {/* experience */}
-          <div
-            className="py-8 pr-4 border-r border-black flex flex-col items-start justify-start cursor-pointer"
-            onClick={() => toggleSection('experience')}
-          >
-            <h2 className="text-4xl font-normal mb-8 gaisyr-font">EXPERIENCE</h2>
+          <div className="py-8 pr-4 border-r border-black flex flex-col items-start justify-start">
+            <h2
+              className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
+              onClick={() => toggleSection('experience')}
+            >
+              EXPERIENCE
+            </h2>
             {openSections.experience && (
               <div className="w-full">
                 {/* AbbVie */}
                 <div className="mb-6">
-                  <h3 className="font-medium text-xl">AbbVie</h3>
-                  <p>Software Engineer Intern</p>
+                  <h3 className="font-medium text-xl">
+                    AbbVie <span className="text-gray-500">Software Engineer Intern</span>
+                  </h3>
+                  <button
+                    onClick={() => toggleJobDescription('abbvie')}
+                    className="text-sm underline hover:no-underline cursor-pointer"
+                  >
+                    info
+                  </button>
+                  {jobDescriptions.abbvie && (
+                    <div className="mt-2 text-sm">
+                      {/* Description will be added later */}
+                      <p>Description coming soon...</p>
+                    </div>
+                  )}
                 </div>
                 {/* Get Vitals */}
                 <div className="mb-6">
-                  <h3 className="font-medium text-xl">Get Vitals</h3>
-                  <p>Software Engineer Intern</p>
+                  <h3 className="font-medium text-xl">
+                    Get Vitals <span className="text-gray-500">Software Engineer Intern</span>
+                  </h3>
+                  <button
+                    onClick={() => toggleJobDescription('getVitals')}
+                    className="text-sm underline hover:no-underline cursor-pointer"
+                  >
+                    info
+                  </button>
+                  {jobDescriptions.getVitals && (
+                    <div className="mt-2 text-sm">
+                      {/* Description will be added later */}
+                      <p>Description coming soon...</p>
+                    </div>
+                  )}
                 </div>
 
               </div>
@@ -95,11 +141,13 @@ export default function Home() {
           </div>
 
           {/* about  */}
-          <div
-            className="py-8 pl-4 flex flex-col items-start justify-start cursor-pointer"
-            onClick={() => toggleSection('about')}
-          >
-            <h2 className="text-4xl font-normal mb-8 gaisyr-font">ABOUT</h2>
+          <div className="py-8 pl-4 flex flex-col items-start justify-start">
+            <h2
+              className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
+              onClick={() => toggleSection('about')}
+            >
+              ABOUT
+            </h2>
             {openSections.about && (
               <div className="w-full">
                 <p className="mb-4">CS Student at University of California, Riverside.</p>
@@ -112,11 +160,13 @@ export default function Home() {
           <div className="h-px bg-black w-full col-span-1 md:col-span-2"></div>
 
           {/* proj Section */}
-          <div
-            className="py-8 flex flex-col items-start justify-start cursor-pointer col-span-1 md:col-span-2"
-            onClick={() => toggleSection('projects')}
-          >
-            <h2 className="text-4xl font-normal mb-8 gaisyr-font">PROJECTS</h2>
+          <div className="py-8 flex flex-col items-start justify-start col-span-1 md:col-span-2">
+            <h2
+              className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
+              onClick={() => toggleSection('projects')}
+            >
+              PROJECTS
+            </h2>
             {openSections.projects && (
               <div className="w-full grid grid-cols-4 gap-4">
                 {/* Matcha Restock Project */}
