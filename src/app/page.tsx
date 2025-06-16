@@ -99,7 +99,7 @@ export default function Home() {
             </h2>
             {openSections.about && (
               <div className="w-full">
-                <p>CS Student at University of California, Riverside. When I'm not coding, I enjoy clothing design, home-made cafe drinks, and working out.</p>
+                <p>CS Student at University of California, Riverside with a focus in Full-Stack Development. When I'm not coding, I enjoy clothing design, home-made cafe drinks, and working out.</p>
               </div>
             )}
           </div>
