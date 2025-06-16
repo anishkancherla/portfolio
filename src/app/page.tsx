@@ -53,22 +53,14 @@ export default function Home() {
           <div className="flex justify-between items-start md:pl-4">
             {/* */}
             <div>
-              <div className="text-lg">Anish Kancherla</div>
-              <div className="text-lg">LINKEDIN</div>
+              <div className="text-lg">Contact</div>
               <div className="text-lg">GITHUB</div>
+              <div className="text-lg">LINKEDIN</div>
             </div>
 
             {/* contact right side */}
             <div className="text-right">
               <div className="text-lg">anish.kancherla@gmail.com</div>
-              <a
-                href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg hover:underline block"
-              >
-                anish-kancherla
-              </a>
               <a
                 href="https://github.com/anishkancherla"
                 target="_blank"
@@ -76,6 +68,14 @@ export default function Home() {
                 className="text-lg hover:underline block"
               >
                 anishkancherla
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg hover:underline block"
+              >
+                anish-kancherla
               </a>
             </div>
           </div>
@@ -89,8 +89,23 @@ export default function Home() {
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
-          {/* experience */}
+          {/* about  */}
           <div className="py-8 pr-4 border-r border-black flex flex-col items-start justify-start">
+            <h2
+              className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
+              onClick={() => toggleSection('about')}
+            >
+              Anish Kancherla
+            </h2>
+            {openSections.about && (
+              <div className="w-full">
+                <p>CS Student at University of California, Riverside. When I'm not coding, I enjoy clothing design, home-made cafe drinks, and working out.</p>
+              </div>
+            )}
+          </div>
+
+          {/* experience */}
+          <div className="py-8 pl-4 flex flex-col items-start justify-start">
             <h2
               className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
               onClick={() => toggleSection('experience')}
@@ -136,22 +151,6 @@ export default function Home() {
                   )}
                 </div>
 
-              </div>
-            )}
-          </div>
-
-          {/* about  */}
-          <div className="py-8 pl-4 flex flex-col items-start justify-start">
-            <h2
-              className="text-4xl font-normal mb-8 gaisyr-font cursor-pointer"
-              onClick={() => toggleSection('about')}
-            >
-              ABOUT
-            </h2>
-            {openSections.about && (
-              <div className="w-full">
-                <p className="mb-4">CS Student at University of California, Riverside.</p>
-                <p>Outside of coding, I enjoy clothing design, home-made cafe drinks, and working out.</p>
               </div>
             )}
           </div>
