@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Anish Kancherla",
+  icons: {
+    icon: "/images/webicon.png",
+  },
 };
 
 export default function RootLayout({

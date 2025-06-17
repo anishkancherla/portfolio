@@ -128,7 +128,7 @@ export default function Home() {
                   {jobDescriptions.abbvie && (
                     <div className="mt-2 text-sm">
                       <p>
-                        Developed a Python-based data management dashboard using Streamlit and PostgreSQL, reducing manual lookups by 30% for over 50 analysts. Containerized a legacy Oracle workflow with Docker, enhancing processing speed, and built interactive Grafana dashboards to accelerate data-driven decisions.
+                        Developed a Python-based data management dashboard using Streamlit and PostgreSQL, reducing manual lookups by 30% for over 50 DWA analysts. Containerized with Docker, enhancing processing speed, and built Matplotlib visualizations to accelerate data-driven decisions.
                       </p>
                     </div>
                   )}
@@ -147,7 +147,7 @@ export default function Home() {
                   {jobDescriptions.getVitals && (
                     <div className="mt-2 text-sm">
                       <p>
-                        Currently extending a nurse-wellness web app for a target rollout to 500+ nurses, using React and TypeScript.
+                        Currently extending a nurse-wellness web app for 500+ nurses, using React and TypeScript. Integrated with OpenAPI API to deliver an AI-powered chatbot for nurses.
                       </p>
                     </div>
                   )}
