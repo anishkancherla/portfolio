@@ -99,7 +99,10 @@ export default function Home() {
             </h2>
             {openSections.about && (
               <div className="w-full">
-                <p>CS Student at University of California, Riverside.</p>
+                <p>CS Student at University of California, Riverside.
+
+                  website currently under construction...
+                </p>
               </div>
             )}
           </div>
