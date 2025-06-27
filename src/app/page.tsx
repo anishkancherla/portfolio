@@ -6,6 +6,7 @@ import Image from "next/image"
 export default function Home() {
   const [lastUpdated, setLastUpdated] = useState("")
 
+
   useEffect(() => {
     const now = new Date()
     const date = now
@@ -15,8 +16,13 @@ export default function Home() {
     setLastUpdated(`${date} ${time}`)
   }, [])
 
+
+
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div 
+      className="min-h-screen bg-black text-white relative"
+      style={{ transform: 'scale(1.1)', transformOrigin: 'top left', width: '91%', height: '91%' }}
+    >
       {/* Header */}
       <header className="w-full py-8">
         <div className="max-w-6xl mx-auto px-8">
@@ -56,6 +62,8 @@ export default function Home() {
         </div>
       </header>
 
+
+
       {/* Main Content */}
       <main className="w-full py-16 px-4 flex items-center justify-center">
         <Receipt lastUpdated={lastUpdated} />
@@ -67,14 +75,14 @@ export default function Home() {
 const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
   return (
     <>
-      <div className="bg-[#cad1c9] text-black max-w-md w-full shadow-2xl transform rotate-1 rounded-md">
+      <div className="bg-[#cad1c9] text-black max-w-md w-full shadow-2xl transform rotate-1 rounded-md astherma-font">
         <div className="p-6 md:p-8">
           {/* Header */}
-          <div className="flex justify-between items-center text-sm">
+          <div className="flex justify-between items-center text-xl">
             <span className="font-bold">ANISH KANCHERLA</span>
             <span>V1.0.0</span>
           </div>
-          <div className="flex justify-between items-center text-sm mt-1">
+          <div className="flex justify-between items-center text-lg mt-1">
             <span>LAST UPDATED</span>
             <span>{lastUpdated}</span>
           </div>
@@ -90,7 +98,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* About Section */}
-          <div className="flex justify-between text-sm">
+          <div className="flex justify-between text-lg">
             <p className="max-w-[70%]">CURRENTLY A CS STUDENT AT UC RIVERSIDE.</p>
             <span className="font-bold">ABOUT</span>
           </div>
@@ -99,7 +107,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Experience Section */}
-          <div className="text-sm space-y-3">
+          <div className="text-lg space-y-3">
             <div>
               <p>
                 CURRENTLY A <span className="font-bold">SOFTWARE ENGINEER INTERN</span>
@@ -143,13 +151,13 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Projects Section */}
-          <div className="text-sm">
+          <div className="text-lg">
             <div className="flex justify-between items-start mb-2">
               <span className="font-bold">PROJECTS</span>
             </div>
             <div>
-              <p className="font-bold">MATCHA_RESTOCK.APP</p>
-              <p className="text-xs my-2 leading-relaxed">
+              <p className="font-bold">MATCHA_RESTOCK</p>
+              <p className="text-base my-2 leading-relaxed">
                 PRODUCT AVAILABILITY TRACKER FOR PREMIUM MATCHA VENDORS. REAL-TIME STOCK MONITORING WITH NOTIFICATION
                 SYSTEM.
               </p>
@@ -169,9 +177,9 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Location Section */}
-          <div className="flex justify-between text-sm">
+          <div className="flex justify-between text-lg">
             <div>
-              <p>BASED IN CALIFORNIA, USA</p>
+              <p>BASED IN CALIFORNIA</p>
               <p className="mt-1">
                 TIMEZONE <span className="ml-2">PACIFIC STANDARD TIME</span>
               </p>
@@ -180,17 +188,12 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           </div>
 
           {/* Table Section */}
-          <div className="border-t-2 border-b-2 border-black my-4 py-2 text-sm">
-            <div className="flex justify-between border-b border-black pb-2">
-              <span className="w-1/3">STATUS</span>
-              <span className="w-1/3 text-center">STUDENT</span>
-              <span className="w-1/3 text-right">UCR</span>
-            </div>
+          <div className="border-t-2 border-b-2 border-black my-4 py-2 text-lg">
             <div className="pt-2 text-center">EMAIL FOR INQUIRIES</div>
           </div>
 
           {/* Links Section */}
-          <div className="flex justify-between text-sm">
+          <div className="flex justify-between text-lg">
             <div className="flex space-x-4">
               <a
                 href="https://github.com/anishkancherla"
@@ -216,7 +219,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
 
           {/* Footer */}
           <div className="text-center mt-6">
-            <p className="text-sm">THANK YOU</p>
+            <p className="text-lg">THANK YOU</p>
           </div>
 
           {/* Barcode */}
@@ -250,6 +253,8 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
             <span>© 2024</span>
           </div>
         </div>
+
+
       </div>
     </>
   )
