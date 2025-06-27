@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div 
       className="min-h-screen bg-black text-white relative"
-      style={{ transform: 'scale(1.1)', transformOrigin: 'top left', width: '91%', height: '91%' }}
+      style={{ transform: 'scale(1.2)', transformOrigin: 'top left', width: '91%', height: '91%' }}
     >
       {/* Header */}
       <header className="w-full py-8">
@@ -168,7 +168,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-600"
               >
-                OPEN_PROJECT.EXE →
+                OPEN PROJECT →
               </a>
             </div>
           </div>
