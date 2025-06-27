@@ -171,6 +171,20 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
                 OPEN PROJECT →
               </a>
             </div>
+
+            <div className="mt-6">
+              <p className="font-bold">PROJECT LOADING..</p>
+              <p className="text-base my-2 leading-relaxed">
+                COMING SOON.
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <p className="font-bold">PROJECT LOADING..</p>
+              <p className="text-base my-2 leading-relaxed">
+                COMING SOON.
+              </p>
+            </div>
           </div>
 
           {/* Dotted Separator */}
