@@ -42,6 +42,39 @@
   font-display: swap;
 }
 
+/* ASTherma Font Faces */
+@font-face {
+  font-family: 'ASTherma';
+  src: url('/fonts/ASTherma-LightCondensed.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ASTherma';
+  src: url('/fonts/ASTherma-MediumCondensed.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ASTherma';
+  src: url('/fonts/ASTherma-BoldCondensed.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ASTherma';
+  src: url('/fonts/ASTherma-BlackCondensed.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Gaisyr Font Face for Numbers */
 @font-face {
   font-family: 'Gaisyr';
@@ -88,4 +121,8 @@ body {
 
 .gaisyr-font {
   font-family: 'Gaisyr', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.astherma-font {
+  font-family: 'ASTherma', sans-serif;
 }
