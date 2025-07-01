@@ -121,6 +121,10 @@ body {
 
 .gaisyr-font {
   font-family: 'Gaisyr', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "kern";
 }
 
 .astherma-font {

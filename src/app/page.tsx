@@ -75,15 +75,15 @@ export default function Home() {
 const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
   return (
     <>
-      <div className="bg-[#cad1c9] text-black max-w-md w-full shadow-2xl transform rotate-1 rounded-md astherma-font">
+      <div className="bg-[#cad1c9] text-black max-w-md w-full shadow-2xl transform rotate-1 rounded-md gaisyr-font">
         <div className="p-6 md:p-8">
           {/* Header */}
-          <div className="flex justify-between items-center text-xl">
+          <div className="flex justify-between items-center text-lg">
             <span className="font-bold">ANISH KANCHERLA</span>
-            <span>V1.0.0</span>
+            <span>V1.1.0</span>
           </div>
-          <div className="flex justify-between items-center text-lg mt-1">
-            <span>LAST UPDATED</span>
+          <div className="flex justify-between items-center text-base mt-1">
+            <span>Last Updated</span>
             <span>{lastUpdated}</span>
           </div>
 
@@ -98,8 +98,8 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* About Section */}
-          <div className="flex justify-between text-lg">
-            <p className="max-w-[70%]">CURRENTLY A CS STUDENT AT UC RIVERSIDE.</p>
+          <div className="flex justify-between text-base">
+            <p className="max-w-[70%]">Currently a CS student at UC Riverside.</p>
             <span className="font-bold">ABOUT</span>
           </div>
 
@@ -107,10 +107,10 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Experience Section */}
-          <div className="text-lg space-y-3">
+          <div className="text-base space-y-3">
             <div>
               <p>
-                CURRENTLY A <span className="font-bold">SOFTWARE ENGINEER INTERN</span>
+                Currently a <span className="font-bold">Software Engineer Intern</span>
               </p>
               <p>
                 @{" "}
@@ -126,7 +126,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
             </div>
             <div>
               <p>
-                PREVIOUSLY A <span className="font-bold">SOFTWARE ENGINEER INTERN</span>
+                Previously a <span className="font-bold">Software Engineer Intern</span>
               </p>
               <p>
                 @{" "}
@@ -142,7 +142,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
             </div>
             <div>
               <p>
-                AND A <span className="font-bold">WEB DEVELOPER</span> @ UCR
+                And a <span className="font-bold">Web Developer</span> @ UCR
               </p>
             </div>
           </div>
@@ -151,15 +151,48 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Projects Section */}
-          <div className="text-lg">
+          <div className="text-base">
             <div className="flex justify-between items-start mb-2">
               <span className="font-bold">PROJECTS</span>
             </div>
             <div>
+              <p className="font-bold">UCR Course Guide</p>
+              <div className="my-2">
+                <video 
+                  className="w-full rounded"
+                  style={{ 
+                    transform: 'translateZ(0)',
+                    backfaceVisibility: 'hidden',
+                    willChange: 'auto'
+                  }}
+                  muted
+                  loop
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => e.currentTarget.pause()}
+                >
+                  <source src="/images/productdemo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p className="text-sm my-2 leading-relaxed">
+                Comprehensive AI course analysis platform for UCR students that generates detailed course guides by extracting relevant information from r/UCR and a student-maintained database.
+              </p>
+
+              <a
+                href="https://www.ucrcourseguide.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-blue-600"
+              >
+                OPEN PROJECT →
+              </a>
+            </div>
+
+            <div className="mt-6">
               <p className="font-bold">MATCHA_RESTOCK</p>
-              <p className="text-base my-2 leading-relaxed">
-                PRODUCT AVAILABILITY TRACKER FOR PREMIUM MATCHA VENDORS. REAL-TIME STOCK MONITORING WITH NOTIFICATION
-                SYSTEM.
+              <p className="text-sm my-2 leading-relaxed">
+                Product availability tracker for premium matcha vendors. Real-time stock monitoring with notification
+                system.
               </p>
 
               <a
@@ -174,24 +207,18 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
 
             <div className="mt-6">
               <p className="font-bold">PROJECT LOADING..</p>
-              <p className="text-base my-2 leading-relaxed">
-                COMING SOON.
+              <p className="text-sm my-2 leading-relaxed">
+                Coming soon.
               </p>
             </div>
 
-            <div className="mt-6">
-              <p className="font-bold">PROJECT LOADING..</p>
-              <p className="text-base my-2 leading-relaxed">
-                COMING SOON.
-              </p>
-            </div>
           </div>
 
           {/* Dotted Separator */}
           <div className="border-t border-dashed border-black my-4"></div>
 
           {/* Location Section */}
-          <div className="flex justify-between text-lg">
+          <div className="flex justify-between text-base">
             <div>
               <p>BASED IN CALIFORNIA</p>
               <p className="mt-1">
@@ -202,12 +229,12 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
           </div>
 
           {/* Table Section */}
-          <div className="border-t-2 border-b-2 border-black my-4 py-2 text-lg">
-            <div className="pt-2 text-center">EMAIL FOR INQUIRIES</div>
+          <div className="border-t-2 border-b-2 border-black my-4 py-2 text-base">
+            <div className="pt-2 text-center">Email for inquiries</div>
           </div>
 
           {/* Links Section */}
-          <div className="flex justify-between text-lg">
+          <div className="flex justify-between text-base">
             <div className="flex space-x-4">
               <a
                 href="https://github.com/anishkancherla"
@@ -233,7 +260,7 @@ const Receipt = ({ lastUpdated }: { lastUpdated: string }) => {
 
           {/* Footer */}
           <div className="text-center mt-6">
-            <p className="text-lg">THANK YOU</p>
+            <p className="text-base">THANK YOU</p>
           </div>
 
           {/* Barcode */}
