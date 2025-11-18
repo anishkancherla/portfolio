@@ -24,8 +24,8 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-8 text-zinc-400 text-base leading-relaxed max-w-[45rem]">
-              Hi! I'm currently studying CS at the University of California, Riverside. I have a passion for learning and building with purpose, with a particular interest in AI automation and agentic systems.
-              In my free time, I like to explore fashion and music, try new restaraunts, and stay active in the gym.
+              Hi! I'm currently studying CS at the University of California, Riverside. I have a passion for learning and building with purpose, with a particular interest in AI automation and agentic systems.{" "}
+              In my free time, I like exploring fashion and music, trying new restaurants, and staying active in the gym.
             </p>
           </section>
 
