@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #1a1a1a;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -10,18 +11,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@font-face {
-  font-family: "Gaisyr";
-  src: url("/fonts/Gaisyr.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-.gaisyr {
-  font-family: "Gaisyr", var(--font-geist-sans);
 }
 
 @font-face {
@@ -34,6 +23,13 @@
 
 .diatype {
   font-family: "ABCDiatype", var(--font-geist-sans);
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Fade-in animation utilities */
@@ -70,8 +66,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
-    --foreground: #000000;
+    --background: #1a1a1a;
+    --foreground: #ffffff;
   }
 }
 
