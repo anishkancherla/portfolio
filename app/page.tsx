@@ -50,7 +50,7 @@ export default function Home() {
 
           <section className="fade-in fade-in-300">
             <p className="diatype text-base text-zinc-400 mb-6">
-              <span className="text-white font-bold font-sans text-2xl">Projects</span>
+              <span className="text-white font-bold font-mono text-2xl">Projects</span>
             </p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
@@ -75,7 +75,7 @@ export default function Home() {
                     </video>
                   </div>
                 </a>
-                <h3 className="text-white font-bold font-sans text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
                   <a 
                     href="https://ucrcourseguide.com" 
                     target="_blank" 
@@ -120,7 +120,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-sans text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://matcharestock.com" 
                         target="_blank" 
@@ -178,7 +178,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-sans text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://getvitals.care/" 
                         target="_blank" 
@@ -213,14 +213,14 @@ export default function Home() {
                         />
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-sans text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://aisc.ucrhighlanders.org/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2"
                       >
-                        AI Student Collective
+                        AISC Club Website
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -237,7 +237,7 @@ export default function Home() {
                         
                       </p>
                     </div>
-                    <h3 className="text-white font-bold font-sans text-lg mb-2">
+                    <h3 className="text-white font-bold font-mono text-lg mb-2">
                       <span className="inline-block">
                         Work in Progress
                       </span>
