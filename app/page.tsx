@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative w-full max-w-4xl">
         <main className="w-full px-0 pt-24 pb-24 sm:px-0 sm:pt-28 sm:pb-32">
           <section className="mb-6 sm:mb-8">
-            <h1 className="font-sans text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            <h1 className="font-mono text-2xl font-bold tracking-tight text-white sm:text-3xl">
               Anish Kancherla
             </h1>
             <div className="mt-2 text-base text-[#ede8d0] lora">
@@ -24,14 +24,14 @@ export default function Home() {
                 Email
               </a>
             </div>
-            <p className="mt-8 text-zinc-400 text-base leading-relaxed max-w-[45rem]">
+            <p className="mt-8 text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
               Hi! I'm currently studying CS at the University of California, Riverside. I have a passion for learning and building with purpose, with a particular interest in AI automation and agentic systems.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities!
             </p>
           </section>
 
           <section className="fade-in fade-in-100 mb-6 sm:mb-8">
-            <p className="diatype text-base text-zinc-400 max-w-[45rem]">
+            <p className="diatype text-base text-zinc-400">
               <span className="text-zinc-400">Previously,</span> I've built Python automation pipelines for clinical data processing at{" "}
               <a href="https://www.abbvie.com/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
                 AbbVie
@@ -40,7 +40,7 @@ export default function Home() {
               <a href="https://getvitals.care/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
                 Get Vitals
               </a>
-              . Currently, I'm building an AI RAG chatbot to deliver breast cancer guidance for Prof. Ghaffari's patients at{" "}
+              . Currently, I'm building an AI RAG chatbot to deliver breast cancer guidance for Prof. Masoumeh Ghaffari's patients at{" "}
               <a href="https://medschool.ucr.edu/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
                 UCR's Medical School
               </a>
@@ -48,7 +48,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section className="fade-in fade-in-200">
+          <section className="fade-in fade-in-300">
             <p className="diatype text-base text-zinc-400 mb-6">
               <span className="text-white font-bold font-sans text-2xl">Projects</span>
             </p>
@@ -80,9 +80,12 @@ export default function Home() {
                     href="https://ucrcourseguide.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block relative after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-[#ede8d0] after:transition-all after:duration-300 group-hover:after:left-0 group-hover:after:w-full"
+                    className="inline-flex items-center gap-2"
                   >
                     UCR Course Guide
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
                   </a>
                 </h3>
                 <p className="diatype text-base text-zinc-400">
@@ -122,9 +125,12 @@ export default function Home() {
                         href="https://matcharestock.com" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-block relative after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-[#ede8d0] after:transition-all after:duration-300 group-hover:after:left-0 group-hover:after:w-full"
+                        className="inline-flex items-center gap-2"
                       >
                         matcharestock
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
                       </a>
                     </h3>
                     <p className="diatype text-base text-zinc-400">
@@ -177,9 +183,12 @@ export default function Home() {
                         href="https://getvitals.care/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-block relative after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-[#ede8d0] after:transition-all after:duration-300 group-hover:after:left-0 group-hover:after:w-full"
+                        className="inline-flex items-center gap-2"
                       >
                         Get Vitals
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
                       </a>
                     </h3>
                     <p className="diatype text-base text-zinc-400">
@@ -188,19 +197,34 @@ export default function Home() {
                   </div>
                 ) : idx === 3 ? (
                   <div key={idx} className="w-full group">
-                    <div className="aspect-[4/3] w-full rounded-lg border border-zinc-800 bg-white shadow-sm overflow-hidden mb-3 relative flex items-end justify-start">
-                      <Image
-                        src="/logos/aisc.png"
-                        alt="AI Student Collective website"
-                        width={400}
-                        height={300}
-                        className="h-auto max-h-full w-auto object-contain -ml-3"
-                      />
-                    </div>
+                    <a 
+                      href="https://aisc.ucrhighlanders.org/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block cursor-pointer"
+                    >
+                      <div className="aspect-[4/3] w-full rounded-lg border border-zinc-800 bg-white shadow-sm overflow-hidden mb-3 relative flex items-end justify-start">
+                        <Image
+                          src="/logos/aisc.png"
+                          alt="AI Student Collective website"
+                          width={400}
+                          height={300}
+                          className="h-auto max-h-full w-auto object-contain -ml-3"
+                        />
+                      </div>
+                    </a>
                     <h3 className="text-white font-bold font-sans text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
-                      <span className="inline-block relative after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-[#ede8d0] after:transition-all after:duration-300 group-hover:after:left-0 group-hover:after:w-full">
+                      <a 
+                        href="https://aisc.ucrhighlanders.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2"
+                      >
                         AI Student Collective
-                      </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                      </a>
                     </h3>
                     <p className="diatype text-base text-zinc-400">
                       Worked with a team of 11 developers to build an official website for UCR's AI Student Collective Club on campus.
