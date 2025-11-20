@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen justify-center bg-[#1a1a1a] font-sans">
       <div className="relative w-full max-w-4xl">
-        <main className="w-full px-0 pt-24 pb-24 sm:px-0 sm:pt-28 sm:pb-32">
+        <main className="w-full px-4 pt-24 pb-24 sm:px-0 sm:pt-28 sm:pb-32">
           <section className="mb-6 sm:mb-8">
             <h1 className="font-mono text-2xl font-bold tracking-tight text-white sm:text-3xl">
               Anish Kancherla
