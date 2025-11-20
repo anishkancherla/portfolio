@@ -8,10 +8,10 @@ export default function Home() {
       <div className="relative w-full max-w-4xl">
         <main className="w-full px-4 pt-24 pb-24 sm:px-0 sm:pt-28 sm:pb-32">
           <section className="mb-6 sm:mb-8">
-            <h1 className="font-mono text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            <h1 className="eb-garamond text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Anish Kancherla
             </h1>
-            <div className="mt-2 text-base text-[#ede8d0] lora">
+            <div className="mt-2 text-base text-[#ede8d0] font-mono">
               <a href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
@@ -33,15 +33,15 @@ export default function Home() {
           <section className="fade-in fade-in-100 mb-6 sm:mb-8">
             <p className="diatype text-base text-zinc-400">
               <span className="text-zinc-400">Previously,</span> I've built Python automation pipelines for clinical data processing at{" "}
-              <a href="https://www.abbvie.com/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
+              <a href="https://www.abbvie.com/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
                 AbbVie
               </a>
               {" "}and built LLM-powered features for a nurse wellness app at {" "}
-              <a href="https://getvitals.care/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
+              <a href="https://getvitals.care/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
                 Get Vitals
               </a>
               . Currently, I'm building an AI RAG chatbot to deliver breast cancer guidance for Prof. Masoumeh Ghaffari's patients at{" "}
-              <a href="https://medschool.ucr.edu/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 lora">
+              <a href="https://medschool.ucr.edu/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
                 UCR's Medical School
               </a>
               .
@@ -50,7 +50,7 @@ export default function Home() {
 
           <section className="fade-in fade-in-300">
             <p className="diatype text-base text-zinc-400 mb-6">
-              <span className="text-white font-bold font-mono text-2xl">Projects</span>
+              <span className="text-white font-bold eb-garamond text-3xl">Projects</span>
             </p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
@@ -75,7 +75,7 @@ export default function Home() {
                     </video>
                   </div>
                 </a>
-                <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                   <a 
                     href="https://ucrcourseguide.com" 
                     target="_blank" 
@@ -120,7 +120,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://matcharestock.com" 
                         target="_blank" 
@@ -178,7 +178,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://getvitals.care/" 
                         target="_blank" 
@@ -213,7 +213,7 @@ export default function Home() {
                         />
                       </div>
                     </a>
-                    <h3 className="text-white font-bold font-mono text-lg mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://aisc.ucrhighlanders.org/" 
                         target="_blank" 
@@ -237,7 +237,7 @@ export default function Home() {
                         
                       </p>
                     </div>
-                    <h3 className="text-white font-bold font-mono text-lg mb-2">
+                    <h3 className="text-white font-bold eb-garamond text-xl mb-2">
                       <span className="inline-block">
                         Work in Progress
                       </span>
