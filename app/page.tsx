@@ -24,18 +24,18 @@ export default function Home() {
                 Email
               </a>
             </div>
-            <h2 className="mt-12 mb-6 text-white font-bold eb-garamond text-2xl fade-in fade-in-100">
+            <h2 className="mt-12 mb-3 text-white text-xl font-mono fade-in fade-in-100">
               About
             </h2>
             <p className="text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
-              Hi! I'm currently studying CS at the University of California, Riverside. I have a passion for learning and building with purpose, with a particular interest in AI automation and agentic systems.{" "}
+              Hi! I'm currently studying CS at the University of California, Riverside. I love to learn, code, and build full-stack, with a particular interest in AI automation.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities!
             </p>
           </section>
 
           <section className="fade-in fade-in-100 mb-8 sm:mb-12">
-            <h2 className="mb-6 text-white font-bold eb-garamond text-2xl">
-              Experience
+            <h2 className="mb-3 text-white text-xl font-mono">
+              Work
             </h2>
             <ul className="space-y-4">
               <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
@@ -87,9 +87,9 @@ export default function Home() {
           </section>
 
           <section className="fade-in fade-in-300">
-            <p className="diatype text-base text-zinc-400 mb-6">
-              <span className="text-white font-bold eb-garamond text-2xl">Projects</span>
-            </p>
+            <h2 className="mb-3 text-white text-xl font-mono">
+              Projects
+            </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
                 <a 
@@ -113,7 +113,7 @@ export default function Home() {
                     </video>
                   </div>
                 </a>
-                <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
+                <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                   <a 
                     href="https://ucrcourseguide.com" 
                     target="_blank" 
@@ -158,7 +158,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://matcharestock.com" 
                         target="_blank" 
@@ -216,7 +216,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://getvitals.care/" 
                         target="_blank" 
@@ -251,7 +251,7 @@ export default function Home() {
                         />
                       </div>
                     </a>
-                    <h3 className="text-white font-bold eb-garamond text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
+                    <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
                       <a 
                         href="https://aisc.ucrhighlanders.org/" 
                         target="_blank" 
@@ -275,7 +275,7 @@ export default function Home() {
                         
                       </p>
                     </div>
-                    <h3 className="text-white font-bold eb-garamond text-xl mb-2">
+                    <h3 className="text-white font-bold font-mono text-xl mb-2">
                       <span className="inline-block">
                         Work in Progress
                       </span>
