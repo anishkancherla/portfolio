@@ -5,8 +5,11 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Anish — Portfolio",
+  title: "Anish Kancherla",
   description: "Personal portfolio",
+  icons: {
+    icon: "/logos/icon22.png",
+  },
 };
 
 export const viewport: Viewport = {
