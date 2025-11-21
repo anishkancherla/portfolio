@@ -60,6 +60,29 @@
 .fade-in-200 { animation-delay: 400ms; }
 .fade-in-300 { animation-delay: 700ms; }
 
+/* Underline animation for company links */
+.underline-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ede8d0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.underline-animate:hover::after {
+  transform: scaleX(1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .fade-in,
   .fade-in-100,
@@ -68,6 +91,10 @@
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+  
+  .underline-animate::after {
+    transition: none !important;
   }
 }
 

@@ -24,33 +24,71 @@ export default function Home() {
                 Email
               </a>
             </div>
-            <p className="mt-8 text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
+            <h2 className="mt-12 mb-6 text-white font-bold eb-garamond text-2xl fade-in fade-in-100">
+              About
+            </h2>
+            <p className="text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
               Hi! I'm currently studying CS at the University of California, Riverside. I have a passion for learning and building with purpose, with a particular interest in AI automation and agentic systems.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities!
             </p>
           </section>
 
-          <section className="fade-in fade-in-100 mb-6 sm:mb-8">
-            <p className="diatype text-base text-zinc-400">
-              <span className="text-zinc-400">Previously,</span> I've built Python automation pipelines for clinical data processing at{" "}
-              <a href="https://www.abbvie.com/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
-                AbbVie
-              </a>
-              {" "}and built LLM-powered features for a nurse wellness app at {" "}
-              <a href="https://getvitals.care/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
-                Get Vitals
-              </a>
-              . Currently, I'm building an AI RAG chatbot to deliver breast cancer guidance for Prof. Masoumeh Ghaffari's patients at{" "}
-              <a href="https://medschool.ucr.edu/" target="_blank" rel="noopener noreferrer" className="text-[#ede8d0] underline underline-offset-4 font-mono text-base">
-                UCR's Medical School
-              </a>
-              .
-            </p>
+          <section className="fade-in fade-in-100 mb-8 sm:mb-12">
+            <h2 className="mb-6 text-white font-bold eb-garamond text-2xl">
+              Experience
+            </h2>
+            <ul className="space-y-4">
+              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                <div className="text-zinc-400 text-base">
+                  <a 
+                    href="https://www.abbvie.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[#ede8d0] font-mono mr-2 underline-animate"
+                  >
+                    AbbVie
+                  </a>
+                  <span className="text-zinc-600 mr-2">–</span>
+                  Software Engineer Intern
+                </div>
+                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2024</div>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                <div className="text-zinc-400 text-base">
+                  <a 
+                    href="https://getvitals.care/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[#ede8d0] font-mono mr-2 underline-animate"
+                  >
+                    Get Vitals
+                  </a>
+                  <span className="text-zinc-600 mr-2">–</span>
+                  Software Engineer Intern
+                </div>
+                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2025</div>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                <div className="text-zinc-400 text-base">
+                  <a 
+                    href="https://medschool.ucr.edu/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[#ede8d0] font-mono mr-2 underline-animate"
+                  >
+                    UCR School of Medicine
+                  </a>
+                  <span className="text-zinc-600 mr-2">–</span>
+                  Gen AI Research Intern
+                </div>
+                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Current</div>
+              </li>
+            </ul>
           </section>
 
           <section className="fade-in fade-in-300">
             <p className="diatype text-base text-zinc-400 mb-6">
-              <span className="text-white font-bold eb-garamond text-3xl">Projects</span>
+              <span className="text-white font-bold eb-garamond text-2xl">Projects</span>
             </p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
