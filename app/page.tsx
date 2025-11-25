@@ -24,10 +24,7 @@ export default function Home() {
                 Email
               </a>
             </div>
-            <h2 className="mt-12 mb-3 text-white text-xl font-mono fade-in fade-in-100">
-              About
-            </h2>
-            <p className="text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
+            <p className="mt-12 text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
               Hi! I'm currently studying CS at the University of California, Riverside. I love to learn, code, and build full-stack, with a particular interest in AI automation.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities!
             </p>
