@@ -25,7 +25,7 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-12 text-zinc-400 text-base leading-relaxed fade-in fade-in-100">
-              Hi! I'm currently studying CS at the University of California, Riverside. I love to learn, code, and build full-stack, with a particular interest in AI automation.{" "}
+              Hi! I'm currently studying CS at the University of California, Riverside. I  love to learn, code, and build user-centric products.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities!
             </p>
           </section>
@@ -37,10 +37,10 @@ export default function Home() {
             <ul className="space-y-4">
               <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
                 <div className="text-zinc-400 text-base">
-                  <a 
-                    href="https://www.abbvie.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://www.abbvie.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#ede8d0] font-mono mr-2 underline-animate"
                   >
                     AbbVie
@@ -52,10 +52,10 @@ export default function Home() {
               </li>
               <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
                 <div className="text-zinc-400 text-base">
-                  <a 
-                    href="https://getvitals.care/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://getvitals.care/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#ede8d0] font-mono mr-2 underline-animate"
                   >
                     Get Vitals
@@ -67,16 +67,16 @@ export default function Home() {
               </li>
               <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
                 <div className="text-zinc-400 text-base">
-                  <a 
-                    href="https://medschool.ucr.edu/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://medschool.ucr.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#ede8d0] font-mono mr-2 underline-animate"
                   >
                     UCR School of Medicine
                   </a>
                   <span className="text-zinc-600 mr-2">–</span>
-                  Gen AI Research Intern
+                  Software Engineer Intern
                 </div>
                 <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Current</div>
               </li>
@@ -89,9 +89,9 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
-                <a 
-                  href="https://ucrcourseguide.com" 
-                  target="_blank" 
+                <a
+                  href="https://ucrcourseguide.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block cursor-pointer"
                 >
@@ -111,9 +111,9 @@ export default function Home() {
                   </div>
                 </a>
                 <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
-                  <a 
-                    href="https://ucrcourseguide.com" 
-                    target="_blank" 
+                  <a
+                    href="https://ucrcourseguide.com"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2"
                   >
@@ -131,9 +131,9 @@ export default function Home() {
               {[1, 2, 3, 4].map((idx) =>
                 idx === 1 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://matcharestock.com" 
-                      target="_blank" 
+                    <a
+                      href="https://matcharestock.com"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
@@ -156,9 +156,9 @@ export default function Home() {
                       </div>
                     </a>
                     <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
-                      <a 
-                        href="https://matcharestock.com" 
-                        target="_blank" 
+                      <a
+                        href="https://matcharestock.com"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2"
                       >
@@ -175,9 +175,9 @@ export default function Home() {
                   </div>
                 ) : idx === 2 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://getvitals.care/" 
-                      target="_blank" 
+                    <a
+                      href="https://getvitals.care/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
@@ -214,9 +214,9 @@ export default function Home() {
                       </div>
                     </a>
                     <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
-                      <a 
-                        href="https://getvitals.care/" 
-                        target="_blank" 
+                      <a
+                        href="https://getvitals.care/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2"
                       >
@@ -232,9 +232,9 @@ export default function Home() {
                   </div>
                 ) : idx === 3 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://aisc.ucrhighlanders.org/" 
-                      target="_blank" 
+                    <a
+                      href="https://aisc.ucrhighlanders.org/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
@@ -249,9 +249,9 @@ export default function Home() {
                       </div>
                     </a>
                     <h3 className="text-white font-bold font-mono text-xl mb-2 group-hover:text-[#ede8d0] transition-colors">
-                      <a 
-                        href="https://aisc.ucrhighlanders.org/" 
-                        target="_blank" 
+                      <a
+                        href="https://aisc.ucrhighlanders.org/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2"
                       >
@@ -269,7 +269,7 @@ export default function Home() {
                   <div key={idx} className="w-full group">
                     <div className="aspect-[4/3] w-full rounded-lg border border-zinc-800 bg-zinc-900 shadow-sm overflow-hidden mb-3 relative flex items-center justify-center">
                       <p className="diatype text-base text-zinc-400">
-                        
+
                       </p>
                     </div>
                     <h3 className="text-white font-bold font-mono text-xl mb-2">
