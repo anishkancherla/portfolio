@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Footer from "./components/Footer";
 
@@ -117,9 +116,9 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
-                <a 
-                  href="https://ucrcourseguide.com" 
-                  target="_blank" 
+                <a
+                  href="https://ucrcourseguide.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block cursor-pointer"
                 >
@@ -160,9 +159,9 @@ export default function Home() {
               {[1, 2, 3, 4].map((idx) =>
                 idx === 1 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://matcharestock.com" 
-                      target="_blank" 
+                    <a
+                      href="https://matcharestock.com"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
@@ -204,9 +203,9 @@ export default function Home() {
                   </div>
                 ) : idx === 2 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://getvitals.care/" 
-                      target="_blank" 
+                    <a
+                      href="https://getvitals.care/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
@@ -261,9 +260,9 @@ export default function Home() {
                   </div>
                 ) : idx === 3 ? (
                   <div key={idx} className="w-full group">
-                    <a 
-                      href="https://aisc.ucrhighlanders.org/" 
-                      target="_blank" 
+                    <a
+                      href="https://aisc.ucrhighlanders.org/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="block cursor-pointer"
                     >
