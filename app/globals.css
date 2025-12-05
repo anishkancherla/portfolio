@@ -54,14 +54,14 @@
 
 .fade-in {
   opacity: 0;
-  animation: fade-in-up 800ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: fade-in-up 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .fade-in-0 { animation-delay: 0ms; }
-.fade-in-100 { animation-delay: 300ms; }
-.fade-in-200 { animation-delay: 600ms; }
-.fade-in-300 { animation-delay: 700ms; }
-.fade-in-400 { animation-delay: 1000ms; }
+.fade-in-100 { animation-delay: 150ms; }
+.fade-in-200 { animation-delay: 300ms; }
+.fade-in-300 { animation-delay: 400ms; }
+.fade-in-400 { animation-delay: 500ms; }
 
 /* hover underline animation */
 .underline-animate {
