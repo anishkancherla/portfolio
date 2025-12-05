@@ -1,7 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Footer from "./components/Footer";
 
 export default function Home() {
+  const [expandedItems, setExpandedItems] = useState({} as Record<number, boolean>);
+
+  const toggleItem = (index: number) => {
+    const newState = { ...expandedItems };
+    newState[index] = !newState[index];
+    setExpandedItems(newState);
+  };
   return (
     <div className="flex min-h-screen justify-center bg-white text-slate-900 font-sans">
       <div className="relative w-full max-w-4xl">
@@ -47,13 +57,33 @@ export default function Home() {
                     >
                       AbbVie
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">Software Engineer Intern</span>
+                    <span className="text-zinc-500 font-sans ml-3">
+                      Software Engineer Intern
+                      <button 
+                        onClick={() => toggleItem(0)}
+                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                      >
+                        {expandedItems[0] ? "-" : "+"}
+                      </button>
+                    </span>
                   </div>
-                  <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                    I built Python automation pipelines and parsing tools to convert trial data into STDM-compliant outputs for 50+ analysts to self serve data builds. I also built an internal dashboard to centralize pipelines with validation & error logic, leading to 30 min of reduced work per spec template and a 80% increase in time-to-resolution.
-                  </p>
-                  <div className="text-zinc-400 text-xs mt-2 font-mono">
-                    <span className="font-semibold">Tools:</span> Python, SQL, React, FastAPI, Pandas, Docker
+                  {expandedItems[0] && (
+                    <div className="sm:hidden">
+                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                        I built Python automation pipelines and parsing tools to convert trial data into STDM-compliant outputs for 50+ analysts to self serve data builds. I also built an internal dashboard to centralize pipelines with validation & error logic, leading to 30 min of reduced work per spec template and a 80% increase in time-to-resolution.
+                      </p>
+                      <div className="text-zinc-400 text-xs mt-2 font-mono">
+                        <span className="font-semibold">Tools:</span> Python, SQL, React, FastAPI, Pandas, Docker
+                      </div>
+                    </div>
+                  )}
+                  <div className="hidden sm:block">
+                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                      I built Python automation pipelines and parsing tools to convert trial data into STDM-compliant outputs for 50+ analysts to self serve data builds. I also built an internal dashboard to centralize pipelines with validation & error logic, leading to 30 min of reduced work per spec template and a 80% increase in time-to-resolution.
+                    </p>
+                    <div className="text-zinc-400 text-xs mt-2 font-mono">
+                      <span className="font-semibold">Tools:</span> Python, SQL, React, FastAPI, Pandas, Docker
+                    </div>
                   </div>
                 </div>
                 <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2024</div>
@@ -70,13 +100,33 @@ export default function Home() {
                     >
                       Get Vitals
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">Software Engineer Intern</span>
+                    <span className="text-zinc-500 font-sans ml-3">
+                      Software Engineer Intern
+                      <button 
+                        onClick={() => toggleItem(1)}
+                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                      >
+                        {expandedItems[1] ? "-" : "+"}
+                      </button>
+                    </span>
                   </div>
-                  <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                    I worked on Get Vitals, a nurse-wellness app for nurses across California Providence hospitals. I built features in React Native, such as a burnout dashboard with LLM-powered insights. I also developed a Python-based research tool that automated the collection of high-value articles and forums on coping strategies, which ideated & led to the development of core evidence-backed app features.
-                  </p>
-                  <div className="text-zinc-400 text-xs mt-2 font-mono">
-                    <span className="font-semibold">Tools:</span> React Native, TypeScript, AWS, Python, Supabase, OpenAI API
+                  {expandedItems[1] && (
+                    <div className="sm:hidden">
+                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                        I worked on Get Vitals, a nurse-wellness app for nurses across California Providence hospitals. I built features in React Native, such as a burnout dashboard with LLM-powered insights. I also developed a Python-based research tool that automated the collection of high-value articles and forums on coping strategies, which ideated & led to the development of core evidence-backed app features.
+                      </p>
+                      <div className="text-zinc-400 text-xs mt-2 font-mono">
+                        <span className="font-semibold">Tools:</span> React Native, TypeScript, AWS, Python, Supabase, OpenAI API
+                      </div>
+                    </div>
+                  )}
+                  <div className="hidden sm:block">
+                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                      I worked on Get Vitals, a nurse-wellness app for nurses across California Providence hospitals. I built features in React Native, such as a burnout dashboard with LLM-powered insights. I also developed a Python-based research tool that automated the collection of high-value articles and forums on coping strategies, which ideated & led to the development of core evidence-backed app features.
+                    </p>
+                    <div className="text-zinc-400 text-xs mt-2 font-mono">
+                      <span className="font-semibold">Tools:</span> React Native, TypeScript, AWS, Python, Supabase, OpenAI API
+                    </div>
                   </div>
                 </div>
                 <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2025</div>
@@ -93,13 +143,33 @@ export default function Home() {
                     >
                       UCR School of Medicine
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">Software Engineer Intern</span>
+                    <span className="text-zinc-500 font-sans ml-3">
+                      Software Engineer Intern
+                      <button 
+                        onClick={() => toggleItem(2)}
+                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                      >
+                        {expandedItems[2] ? "-" : "+"}
+                      </button>
+                    </span>
                   </div>
-                  <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                    I developed an AI chatbot to help Prof. Masoumeh Ghaffari deliver personalized guidance to patients diagnosed with breast cancer. I built a RAG pipeline optimized with section-aware chunking, safety guidelines, and profile-aware prompts to adapt answers to the patient's knowledge level.
-                  </p>
-                  <div className="text-zinc-400 text-xs mt-2 font-mono">
-                    <span className="font-semibold">Tools:</span> Python, LlamaIndex, pgvector, PostgreSQL, React, FastAPI
+                  {expandedItems[2] && (
+                    <div className="sm:hidden">
+                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                        I developed an AI chatbot to help Prof. Masoumeh Ghaffari deliver personalized guidance to patients diagnosed with breast cancer. I built a RAG pipeline optimized with section-aware chunking, safety guidelines, and profile-aware prompts to adapt answers to the patient's knowledge level.
+                      </p>
+                      <div className="text-zinc-400 text-xs mt-2 font-mono">
+                        <span className="font-semibold">Tools:</span> Python, LlamaIndex, pgvector, PostgreSQL, React, FastAPI
+                      </div>
+                    </div>
+                  )}
+                  <div className="hidden sm:block">
+                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
+                      I developed an AI chatbot to help Prof. Masoumeh Ghaffari deliver personalized guidance to patients diagnosed with breast cancer. I built a RAG pipeline optimized with section-aware chunking, safety guidelines, and profile-aware prompts to adapt answers to the patient's knowledge level.
+                    </p>
+                    <div className="text-zinc-400 text-xs mt-2 font-mono">
+                      <span className="font-semibold">Tools:</span> Python, LlamaIndex, pgvector, PostgreSQL, React, FastAPI
+                    </div>
                   </div>
                 </div>
                 <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Current</div>
