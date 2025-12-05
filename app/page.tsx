@@ -9,11 +9,8 @@ export default function Home() {
           <section className="mb-10 sm:mb-12">
             <h1 className="font-normal leading-tight text-[42px] sm:text-6xl tracking-tight fade-in fade-in-0 relative">
               <span className="text-[#0b0b0b] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>anish</span>{" "}
-              <span className="text-[#000080] font-bold text-[36px] sm:text-5xl relative group" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
+              <span className="text-[#000080] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
                 / yuva
-                <span className="absolute bottom-full left-1 -mb-1 text-black text-base font-mono pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap" style={{ letterSpacing: '0.01em', display: 'flex', alignItems: 'flex-end' }}>
-                  <span className="text-2xl mr-2" style={{ lineHeight: '1', paddingBottom: '2px' }}>*</span> I go by both names!
-                </span>
               </span>
             </h1>
             <p className="mt-1 text-slate-700 text-[15px] sm:text-[16px] leading-relaxed fade-in fade-in-100 max-w-3xl">
