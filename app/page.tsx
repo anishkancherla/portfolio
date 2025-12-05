@@ -57,7 +57,7 @@ export default function Home() {
                     >
                       AbbVie
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">
+                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(0)}
@@ -100,7 +100,7 @@ export default function Home() {
                     >
                       Get Vitals
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">
+                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(1)}
@@ -139,11 +139,11 @@ export default function Home() {
                       href="https://medschool.ucr.edu/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-slate-900 font-bold underline-animate"
+                      className="text-slate-900 font-bold underline-animate text-xs sm:text-sm"
                     >
                       UCR School of Medicine
                     </a>
-                    <span className="text-zinc-500 font-sans ml-3">
+                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(2)}
