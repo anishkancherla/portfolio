@@ -6,6 +6,7 @@ export default function Footer() {
   const [currentTime, setCurrentTime] = useState<string>("");
 
   useEffect(() => {
+    // for time updates
     const updateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
@@ -16,16 +17,19 @@ export default function Footer() {
         hour12: true,
       };
       const timeString = now.toLocaleTimeString("en-US", options);
-      setCurrentTime(`${timeString} PST`);
+      const formattedTime = `${timeString} PST`;
+      setCurrentTime(formattedTime);
     };
 
     
     updateTime();
 
-
+    
     const interval = setInterval(updateTime, 1000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (

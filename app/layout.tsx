@@ -4,9 +4,10 @@ import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
+
 export const metadata: Metadata = {
   title: "Anish Kancherla",
-  description: "Personal portfolio",
+  description: "Personal Portfolio",
   icons: {
     icon: "/logos/icon22.png",
   },
@@ -24,10 +25,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  const fontClasses = `${GeistSans.variable} ${GeistMono.variable} ${GeistSans.className}`;
+  
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${GeistSans.className}`}
+      className={fontClasses}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
