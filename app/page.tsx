@@ -30,7 +30,7 @@ export default function Home() {
             {/* socials */}
             <div className="mt-2 flex flex-wrap items-center gap-3 text-sm font-mono text-slate-600 fade-in fade-in-100">
               <a href="https://github.com/anishkancherla" target="_blank" rel="noopener noreferrer" className="underline-animate">
-                Github ↗
+                GitHub ↗
               </a>
               <a href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263" target="_blank" rel="noopener noreferrer" className="underline-animate">
                 LinkedIn ↗
