@@ -198,7 +198,7 @@ export default function Home() {
                       className="w-full h-auto object-contain"
                     >
                       <source
-                        src="https://anish-my-portfolio-media.s3.us-east-2.amazonaws.com/videos/4kstudio.mp4"
+                        src="/videos/ucrcourseguidedemo.mp4"
                         type="video/mp4"
                       />
                     </video>
