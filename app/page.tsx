@@ -13,22 +13,22 @@ export default function Home() {
     setExpandedItems(newState);
   };
   return (
-    <div className="flex min-h-screen justify-center bg-white text-slate-900 font-sans">
+    <div className="flex min-h-screen justify-center text-slate-900 font-sans">
       <div className="relative w-full max-w-4xl">
         <main className="w-full px-4 pt-20 pb-24 sm:px-0 sm:pt-24 sm:pb-32">
           <section className="mb-10 sm:mb-12">
             <h1 className="font-normal leading-tight text-[42px] sm:text-6xl tracking-tight relative">
               <span className="text-[#0b0b0b] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>anish</span>{" "}
-              <span className="text-[#000080] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
+              <span className="text-[#201a7a] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
                 / yuva
               </span>
             </h1>
-            <p className="mt-1 text-slate-700 text-[15px] sm:text-[16px] leading-relaxed fade-in fade-in-100 max-w-3xl">
+            <p className="mt-1 text-slate-700 text-[14px] sm:text-[15px] leading-relaxed fade-in fade-in-100 max-w-3xl">
               Currently studying CS at UC Riverside. I love to learn, code, and build user-centric products.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities.
             </p>
             {/* socials */}
-            <div className="mt-2 flex flex-wrap items-center gap-3 text-sm font-mono text-slate-600 fade-in fade-in-100">
+            <div className="mt-2 flex flex-wrap items-center gap-3 text-base font-mono text-slate-600 fade-in fade-in-100">
               <a href="https://github.com/anishkancherla" target="_blank" rel="noopener noreferrer" className="underline-animate">
                 GitHub ↗
               </a>
@@ -61,7 +61,7 @@ export default function Home() {
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(0)}
-                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
                       >
                         {expandedItems[0] ? "-" : "+"}
                       </button>
@@ -104,7 +104,7 @@ export default function Home() {
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(1)}
-                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
                       >
                         {expandedItems[1] ? "-" : "+"}
                       </button>
@@ -147,7 +147,7 @@ export default function Home() {
                       Software Engineer Intern
                       <button 
                         onClick={() => toggleItem(2)}
-                        className="sm:hidden ml-2 text-[#000080] font-bold text-base"
+                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
                       >
                         {expandedItems[2] ? "-" : "+"}
                       </button>

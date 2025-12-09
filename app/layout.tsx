@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Anish Kancherla",
   description: "Personal Portfolio",
   icons: {
-    icon: "/logos/icon22.png",
+    icon: "/logos/icon.png",
   },
 };
 

@@ -76,7 +76,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #000080;
+  background-color: #201a7a;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,7 +105,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
+    /* Keep the same vintage background in dark mode for consistency */
+    --background: #f3e8d0;
     --foreground: #0f172a;
   }
 }
@@ -118,11 +119,11 @@ body {
 
 /* text selection color */
 ::selection {
-  background-color: #000080;
+  background-color: #201a7a;
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background-color: #000080;
+  background-color: #201a7a;
   color: #ffffff;
 }
