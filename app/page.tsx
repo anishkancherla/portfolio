@@ -18,8 +18,8 @@ export default function Home() {
         <main className="w-full px-4 pt-20 pb-24 sm:px-0 sm:pt-24 sm:pb-32">
           <section className="mb-10 sm:mb-12">
             <h1 className="font-normal leading-tight text-[42px] sm:text-6xl tracking-tight relative">
-              <span className="text-[#0b0b0b] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>anish</span>{" "}
-              <span className="text-[#201a7a] font-bold text-[36px] sm:text-5xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
+              <span className="text-[#0b0b0b] font-bold text-[36px] sm:text-5xl nanum-myeongjo">anish</span>{" "}
+              <span className="text-[#201a7a] font-bold text-[36px] sm:text-5xl nanum-myeongjo">
                 / yuva
               </span>
             </h1>
@@ -42,7 +42,7 @@ export default function Home() {
           </section>
 
           <section className="mb-8 sm:mb-12">
-            <h2 className="mb-3 text-slate-900 text-xl fade-in fade-in-200" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
+            <h2 className="mb-3 text-slate-900 text-xl fade-in fade-in-200 nanum-myeongjo">
               Work
             </h2>
             <ul className="space-y-6 fade-in fade-in-300">
@@ -178,7 +178,7 @@ export default function Home() {
           </section>
 
           <section className="fade-in fade-in-400">
-            <h2 className="mb-3 text-slate-900 text-xl" style={{ fontFamily: 'Inter, Arial, -apple-system, sans-serif' }}>
+            <h2 className="mb-3 text-slate-900 text-xl nanum-myeongjo">
               Projects
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
