@@ -1,17 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Footer from "./components/Footer";
 
 export default function Home() {
-  const [expandedItems, setExpandedItems] = useState({} as Record<number, boolean>);
-
-  const toggleItem = (index: number) => {
-    const newState = { ...expandedItems };
-    newState[index] = !newState[index];
-    setExpandedItems(newState);
-  };
   return (
     <div className="flex min-h-screen justify-center text-slate-900 font-sans">
       <div className="relative w-full max-w-4xl">
@@ -23,7 +15,7 @@ export default function Home() {
                 / yuva
               </span>
             </h1>
-            <p className="mt-1 text-slate-700 text-[14px] sm:text-[15px] leading-relaxed fade-in fade-in-100 max-w-3xl">
+            <p className="mt-1 text-slate-700 text-[14px] sm:text-[16px] leading-relaxed fade-in fade-in-100 max-w-3xl">
               Currently studying CS at UC Riverside. I love to learn, code, and build user-centric products.{" "}
               In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities.
             </p>
@@ -42,125 +34,59 @@ export default function Home() {
           </section>
 
           <section className="mb-8 sm:mb-12">
-            <h2 className="mb-3 text-slate-900 text-xl fade-in fade-in-200 nanum-myeongjo">
+            <h2 className="mb-3 text-slate-900 text-xl font-bold fade-in fade-in-200 nanum-myeongjo">
               Work
             </h2>
             <ul className="space-y-6 fade-in fade-in-300">
-              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-                <div className="flex-1">
-                  <div className="text-zinc-500 text-sm font-mono leading-relaxed">
-                    <a 
-                      href="https://www.abbvie.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-slate-900 font-bold underline-animate"
-                    >
-                      AbbVie
-                    </a>
-                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
-                      Software Engineer Intern
-                      <button 
-                        onClick={() => toggleItem(0)}
-                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
-                      >
-                        {expandedItems[0] ? "-" : "+"}
-                      </button>
-                    </span>
-                  </div>
-                  {expandedItems[0] && (
-                    <div className="sm:hidden">
-                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                        I built Python automation pipelines and parsing tools to convert trial data into STDM-compliant outputs for 50+ analysts to self serve data builds. I also built an internal dashboard to centralize pipelines with validation & error logic, leading to 30 min of reduced work per spec template and a 80% increase in time-to-resolution.
-                      </p>
-                    </div>
-                  )}
-                  <div className="hidden sm:block">
-                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                      I built Python automation pipelines and parsing tools to convert trial data into STDM-compliant outputs for 50+ analysts to self serve data builds. I also built an internal dashboard to centralize pipelines with validation & error logic, leading to 30 min of reduced work per spec template and a 80% increase in time-to-resolution.
-                    </p>
-                  </div>
+              <li>
+                <div className="text-slate-900 text-sm leading-relaxed">
+                  Built internal tool & dashboard to automate spec template generation for 50+ DWH analysts at{" "}
+                  <a 
+                    href="https://www.abbvie.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-900 underline"
+                  >
+                    AbbVie
+                  </a>
                 </div>
-                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2024</div>
+                <div className="text-zinc-500 font-mono text-sm mt-1">Summer 2024</div>
               </li>
               
-              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-                <div className="flex-1">
-                  <div className="text-zinc-500 text-sm font-mono leading-relaxed">
-                    <a 
-                      href="https://getvitals.care/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-slate-900 font-bold underline-animate"
-                    >
-                      Get Vitals
-                    </a>
-                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
-                      Software Engineer Intern
-                      <button 
-                        onClick={() => toggleItem(1)}
-                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
-                      >
-                        {expandedItems[1] ? "-" : "+"}
-                      </button>
-                    </span>
-                  </div>
-                  {expandedItems[1] && (
-                    <div className="sm:hidden">
-                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                        I worked on Get Vitals, a nurse-wellness app for nurses across California Providence hospitals. I built features in React Native, such as a burnout dashboard with LLM-powered insights. I also developed a Python-based research tool that automated the collection of high-value articles and forums on coping strategies, which ideated & led to the development of core evidence-backed app features.
-                      </p>
-                    </div>
-                  )}
-                  <div className="hidden sm:block">
-                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                      I worked on Get Vitals, a nurse-wellness app for nurses across California Providence hospitals. I built features in React Native, such as a burnout dashboard with LLM-powered insights. I also developed a Python-based research tool that automated the collection of high-value articles and forums on coping strategies, which ideated & led to the development of core evidence-backed app features.
-                    </p>
-                  </div>
+              <li>
+                <div className="text-slate-900 text-sm leading-relaxed">
+                  Built AI-powered features and research automation tool in a nurse wellness app for 500+ nurses at{" "}
+                  <a 
+                    href="https://getvitals.care/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-900 underline"
+                  >
+                    Get Vitals
+                  </a>
                 </div>
-                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Summer 2025</div>
+                <div className="text-zinc-500 font-mono text-sm mt-1">Summer 2025</div>
               </li>
               
-              <li className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-                <div className="flex-1">
-                  <div className="text-zinc-500 text-sm font-mono leading-relaxed">
-                    <a 
-                      href="https://medschool.ucr.edu/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-slate-900 font-bold underline-animate text-xs sm:text-sm"
-                    >
-                      UCR School of Medicine
-                    </a>
-                    <span className="text-zinc-500 font-sans ml-3 text-xs sm:text-sm">
-                      Software Engineer Intern
-                      <button 
-                        onClick={() => toggleItem(2)}
-                        className="sm:hidden ml-2 text-[#201a7a] font-bold text-base"
-                      >
-                        {expandedItems[2] ? "-" : "+"}
-                      </button>
-                    </span>
-                  </div>
-                  {expandedItems[2] && (
-                    <div className="sm:hidden">
-                      <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                        I developed an AI chatbot to help Prof. Masoumeh Ghaffari deliver personalized guidance to patients diagnosed with breast cancer. I built a RAG pipeline optimized with section-aware chunking, safety guidelines, and profile-aware prompts to adapt answers to the patient's knowledge level.
-                      </p>
-                    </div>
-                  )}
-                  <div className="hidden sm:block">
-                    <p className="text-zinc-500 text-xs mt-2 leading-relaxed">
-                      I developed an AI chatbot to help Prof. Masoumeh Ghaffari deliver personalized guidance to patients diagnosed with breast cancer. I built a RAG pipeline optimized with section-aware chunking, safety guidelines, and profile-aware prompts to adapt answers to the patient's knowledge level.
-                    </p>
-                  </div>
+              <li>
+                <div className="text-slate-900 text-sm leading-relaxed">
+                  Built interactive RAG chatbot for personalized patient breast cancer guidance at{" "}
+                  <a 
+                    href="https://medschool.ucr.edu/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-900 underline"
+                  >
+                    UCR's Medical School
+                  </a>
                 </div>
-                <div className="text-zinc-500 font-mono text-sm whitespace-nowrap pt-0.5">Current</div>
+                <div className="text-zinc-500 font-mono text-sm mt-1">Current</div>
               </li>
             </ul>
           </section>
 
           <section className="fade-in fade-in-400">
-            <h2 className="mb-3 text-slate-900 text-xl nanum-myeongjo">
+            <h2 className="mb-3 text-slate-900 text-xl font-bold nanum-myeongjo">
               Projects
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
