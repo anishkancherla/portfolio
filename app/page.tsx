@@ -5,90 +5,94 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen justify-center text-slate-900 font-sans">
-      <div className="relative w-full max-w-4xl">
-        <main className="w-full px-4 pt-20 pb-24 sm:px-0 sm:pt-24 sm:pb-32">
-          <section className="mb-10 sm:mb-12">
-            <h1 className="font-normal leading-tight text-[42px] sm:text-6xl tracking-tight relative">
-              <span className="text-[#0b0b0b] font-bold text-[36px] sm:text-5xl nanum-myeongjo">anish</span>{" "}
-              <span className="text-[#201a7a] font-bold text-[36px] sm:text-5xl nanum-myeongjo">
-                / yuva
-              </span>
-            </h1>
-            <p className="mt-1 text-slate-700 text-[14px] sm:text-[16px] leading-relaxed fade-in fade-in-100 max-w-3xl">
-              Currently studying CS at UC Riverside. I love to learn, code, and build user-centric products.{" "}
-              In my free time, I like exploring fashion and music, trying new restaurants and cafes, and staying active in the gym. I still have lots more to learn, and I'm always open to exploring any new opportunities.
-            </p>
-            {/* socials */}
-            <div className="mt-2 flex flex-wrap items-center gap-3 text-base font-mono text-slate-600 fade-in fade-in-100">
-              <a href="https://github.com/anishkancherla" target="_blank" rel="noopener noreferrer" className="underline-animate">
-                GitHub ↗
+    <div className="min-h-screen text-slate-900 font-sans">
+      {/* Top bar */}
+      <div className="mx-auto mt-8 max-w-5xl px-8 sm:px-12">
+        <nav className="border-2 border-[var(--brand-red)]">
+          <div className="flex items-stretch justify-between">
+            <a 
+              href="#"
+              className="courier-prime px-8 py-4 text-base uppercase font-medium text-[var(--brand-red)] border-r-2 border-[var(--brand-red)] hover:bg-gray-50 transition-colors"
+            >
+              anish kancherla
+            </a>
+            <div className="flex items-stretch">
+              <a
+                href="#"
+                className="courier-prime px-8 py-4 text-base uppercase font-medium bg-[var(--brand-red)] text-white border-l-2 border-[var(--brand-red)] hover:opacity-90 transition-opacity"
+              >
+                home
               </a>
-              <a href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263" target="_blank" rel="noopener noreferrer" className="underline-animate">
-                LinkedIn ↗
+              <a
+                href="#projects"
+                className="courier-prime px-8 py-4 text-base uppercase font-medium text-[var(--brand-red)] border-l-2 border-[var(--brand-red)] hover:bg-gray-50 transition-colors"
+              >
+                projects
               </a>
-              <a href="mailto:anish.kancherla@gmail.com" className="underline-animate">
-                Email ↗
+              <a
+                href="#contact"
+                className="courier-prime px-8 py-4 text-base uppercase font-medium text-[var(--brand-red)] border-l-2 border-[var(--brand-red)] hover:bg-gray-50 transition-colors"
+              >
+                contact
               </a>
             </div>
-          </section>
+          </div>
+        </nav>
+      </div>
 
-          <section className="mb-8 sm:mb-12">
-            <h2 className="mb-3 text-slate-900 text-xl font-bold fade-in fade-in-200 nanum-myeongjo">
-              Work
-            </h2>
-            <ul className="space-y-6 fade-in fade-in-300">
-              <li>
-                <div className="text-slate-900 text-sm leading-relaxed">
-                  Built internal tool & dashboard to automate spec template generation for 50+ DWH analysts at{" "}
-                  <a 
-                    href="https://www.abbvie.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-900 underline"
-                  >
-                    AbbVie
-                  </a>
-                </div>
-                <div className="text-zinc-500 font-mono text-sm mt-1">Summer 2024</div>
-              </li>
-              
-              <li>
-                <div className="text-slate-900 text-sm leading-relaxed">
-                  Built AI-powered features and research automation tool in a nurse wellness app for 500+ nurses at{" "}
-                  <a 
-                    href="https://getvitals.care/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-900 underline"
-                  >
-                    Get Vitals
-                  </a>
-                </div>
-                <div className="text-zinc-500 font-mono text-sm mt-1">Summer 2025</div>
-              </li>
-              
-              <li>
-                <div className="text-slate-900 text-sm leading-relaxed">
-                  Built interactive RAG chatbot for personalized patient breast cancer guidance at{" "}
-                  <a 
-                    href="https://medschool.ucr.edu/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-900 underline"
-                  >
-                    UCR's Medical School
-                  </a>
-                </div>
-                <div className="text-zinc-500 font-mono text-sm mt-1">Current</div>
-              </li>
-            </ul>
-          </section>
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-4xl">
+          <main className="w-full px-4 pt-12 pb-24 sm:px-0 sm:pt-16 sm:pb-32">
+            {/* Intro paragraph */}
+            <section className="mb-10 sm:mb-12">
+              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl">
+                Hi, I'm Anish!
+              </p>
+              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl mt-6">
+                I'm currently studying CS at UC Riverside. I love to learn, code, and build things that acutally work.
+                When I'm not coding, I like exploring fashion and music, trying new restaurants/cafes, and staying active
+                in the gym.
+              </p>
+              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl mt-6">
+                Previously, I built internal tools & a dashboard to automate spec template generation for 50+ DWH analysts at{" "}
+                <a
+                  href="https://www.abbvie.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-900 underline decoration-[var(--brand-red)]/40"
+                >
+                  AbbVie
+                </a>{" "}
+                (Summer 2024). Built AI-powered features and research automation tool in a nurse wellness app for 500+ nurses at{" "}
+                <a
+                  href="https://getvitals.care/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-900 underline decoration-[var(--brand-red)]/40"
+                >
+                  Get Vitals
+                </a>{" "}
+                (Summer 2025). Built interactive RAG chatbot for personalized patient breast cancer guidance at{" "}
+                <a
+                  href="https://medschool.ucr.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-900 underline decoration-[var(--brand-red)]/40"
+                >
+                  UCR's Medical School
+                </a>{" "}
+                (Fall 2025)
+              </p>
+            </section>
 
-          <section className="fade-in fade-in-400">
-            <h2 className="mb-3 text-slate-900 text-xl font-bold nanum-myeongjo">
-              Projects
-            </h2>
+            {/* Separator line */}
+            <div className="w-full h-[2px] bg-[var(--brand-red)] mb-10 sm:mb-12"></div>
+
+            {/* Projects (leave as-is) */}
+            <section id="projects" className="fade-in fade-in-400">
+              <h2 className="mb-3 text-slate-900 eb-garamond text-[24px] sm:text-[28px]">
+                Projects:
+              </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
                 <a
@@ -112,7 +116,7 @@ export default function Home() {
                     </video>
                   </div>
                 </a>
-                <h3 className="text-slate-900 font-bold font-mono text-xl mb-2 group-hover:text-slate-700 transition-colors">
+                <h3 className="text-slate-900 font-bold eb-garamond text-2xl mb-2">
                   <a 
                     href="https://ucrcourseguide.com" 
                     target="_blank" 
@@ -120,18 +124,18 @@ export default function Home() {
                     className="inline-flex items-center gap-2"
                   >
                     UCR Course Guide
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:text-[var(--brand-red)] transition-all">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                   </a>
                 </h3>
-                <p className="diatype text-base text-zinc-500">
+                <p className="libre-franklin text-base text-zinc-500">
                   AI-powered course/professor guidance platform for UCR. Leveraging Reddit, Rate My Professors, and other
                   online community discussions to generate comprehensive insights in seconds. Gained 3,000+ users and 12,000+ courses searched.
                 </p>
               </div>
               {/* map for project items */}
-              {[1, 2, 3, 4].map((idx) =>
+              {[1, 2, 3].map((idx) =>
                 idx === 1 ? (
                   <div key={idx} className="w-full group">
                     <a
@@ -158,7 +162,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-slate-900 font-bold font-mono text-xl mb-2 group-hover:text-slate-700 transition-colors">
+                    <h3 className="text-slate-900 font-bold eb-garamond text-2xl mb-2">
                       <a 
                         href="https://matcharestock.com" 
                         target="_blank" 
@@ -166,12 +170,12 @@ export default function Home() {
                         className="inline-flex items-center gap-2"
                       >
                         matcharestock
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:text-[var(--brand-red)] transition-all">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
                       </a>
                     </h3>
-                    <p className="diatype text-base text-zinc-500">
+                    <p className="libre-franklin text-base text-zinc-500">
                       Restock tracking tool for premium matcha brands. Sends email/discord alerts within seconds of a restock, beating competitive 2 minute sell-outs.
                       Gained 150+ subscribers.
                     </p>
@@ -216,7 +220,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                    <h3 className="text-slate-900 font-bold font-mono text-xl mb-2 group-hover:text-slate-700 transition-colors">
+                    <h3 className="text-slate-900 font-bold eb-garamond text-2xl mb-2">
                       <a 
                         href="https://getvitals.care/" 
                         target="_blank" 
@@ -224,16 +228,16 @@ export default function Home() {
                         className="inline-flex items-center gap-2"
                       >
                         Get Vitals
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:text-[var(--brand-red)] transition-all">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
                       </a>
                     </h3>
-                    <p className="diatype text-base text-zinc-500">
+                    <p className="libre-franklin text-base text-zinc-500">
                       Burnout support app for nurses across partner hospitals. Worked on tracking features & a tool to automate relevant research collection that drove new core wellness features.
                     </p>
                   </div>
-                ) : idx === 3 ? (
+                ) : (
                   <div key={idx} className="w-full group">
                     <a
                       href="https://aisc.ucrhighlanders.org/"
@@ -251,7 +255,7 @@ export default function Home() {
                         />
                       </div>
                     </a>
-                    <h3 className="text-slate-900 font-bold font-mono text-xl mb-2 group-hover:text-slate-700 transition-colors">
+                    <h3 className="text-slate-900 font-bold eb-garamond text-2xl mb-2">
                       <a 
                         href="https://aisc.ucrhighlanders.org/" 
                         target="_blank" 
@@ -259,37 +263,63 @@ export default function Home() {
                         className="inline-flex items-center gap-2"
                       >
                         AISC Club Website
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:text-[var(--brand-red)] transition-all">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
                       </a>
                     </h3>
-                    <p className="diatype text-base text-zinc-500">
+                    <p className="libre-franklin text-base text-zinc-500">
                       Worked with a team of 11 developers to build an official website for UCR's AI Student Collective Club on campus.
-                    </p>
-                  </div>
-                ) : (
-                  <div key={idx} className="w-full group">
-                    <div className="aspect-[4/3] w-full rounded-lg border border-zinc-200 bg-zinc-50 shadow-sm overflow-hidden mb-3 relative flex items-center justify-center">
-                      <p className="diatype text-base text-zinc-500">
-                        
-                      </p>
-                    </div>
-                    <h3 className="text-slate-900 font-bold font-mono text-xl mb-2">
-                      <span className="inline-block">
-                        Work in Progress
-                      </span>
-                    </h3>
-                    <p className="diatype text-base text-zinc-500">
-                      Project coming soon...
                     </p>
                   </div>
                 )
               )}
             </div>
-          </section>
-          <Footer />
-        </main>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      {/* Separator line */}
+      <div className="w-full h-[2px] bg-[var(--brand-red)]"></div>
+
+      {/* Footer section with red background */}
+      <div className="w-full bg-[var(--brand-red)]">
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-4xl">
+            <div className="w-full px-4 py-12 sm:px-0 sm:py-16">
+              {/* Contact */}
+              <section id="contact">
+                <div className="flex justify-between items-center text-xl courier-prime text-white mb-12">
+                  <a
+                    href="https://github.com/anishkancherla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    GitHub ↗
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    LinkedIn ↗
+                  </a>
+                  <a 
+                    href="mailto:anish.kancherla@gmail.com" 
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    Email ↗
+                  </a>
+                </div>
+              </section>
+
+              <Footer />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

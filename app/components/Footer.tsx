@@ -33,12 +33,12 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="w-full border-t border-zinc-800 mt-12 pt-6 pb-6 px-4 sm:px-0">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 text-zinc-400 text-sm">
-        <div className="diatype">
+    <footer className="w-full border-t border-white pt-6 pb-6 px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 text-white text-sm">
+        <div className="libre-franklin">
           2025 © Anish Kancherla
         </div>
-        <div className="diatype">
+        <div className="libre-franklin">
           {currentTime}
         </div>
       </div>
