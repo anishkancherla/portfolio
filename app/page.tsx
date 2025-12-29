@@ -45,15 +45,15 @@ export default function Home() {
           <main className="w-full px-4 pt-12 pb-24 sm:px-0 sm:pt-16 sm:pb-32">
             {/* Intro paragraph */}
             <section className="mb-10 sm:mb-12">
-              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl">
+              <p className="eb-garamond text-slate-900 text-[21px] sm:text-[24px] leading-relaxed max-w-[52rem]">
                 Hi, I'm Anish!
               </p>
-              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl mt-6">
-                I'm currently studying CS at UC Riverside. I love to learn, code, and build things that acutally work.
+              <p className="eb-garamond text-slate-900 text-[21px] sm:text-[24px] leading-relaxed max-w-[52rem] mt-6">
+                I'm currently studying CS at UC Riverside. I love to learn, code, and build things that actually work.
                 When I'm not coding, I like exploring fashion and music, trying new restaurants/cafes, and staying active
                 in the gym.
               </p>
-              <p className="eb-garamond text-slate-900 text-[24px] sm:text-[28px] leading-relaxed max-w-3xl mt-6">
+              <p className="eb-garamond text-slate-900 text-[21px] sm:text-[24px] leading-relaxed max-w-[52rem] mt-6">
                 Previously, I built internal tools & a dashboard to automate spec template generation for 50+ DWH analysts at{" "}
                 <a
                   href="https://www.abbvie.com/"
@@ -90,8 +90,8 @@ export default function Home() {
 
             {/* Projects (leave as-is) */}
             <section id="projects" className="fade-in fade-in-400">
-              <h2 className="mb-3 text-slate-900 eb-garamond text-[24px] sm:text-[28px]">
-                Projects:
+              <h2 className="mb-3 text-slate-900 eb-garamond text-[21px] sm:text-[24px]">
+                Projects
               </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="w-full sm:col-span-2 group">
@@ -280,44 +280,38 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Separator line */}
-      <div className="w-full h-[2px] bg-[var(--brand-red)]"></div>
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-4xl">
+          <div className="w-full px-4 pb-12 sm:px-0 sm:pb-16">
+            {/* Contact */}
+            <section id="contact">
+              <div className="flex justify-between items-center text-xl courier-prime text-slate-900 mb-12">
+                <a
+                  href="https://github.com/anishkancherla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  GitHub ↗
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  LinkedIn ↗
+                </a>
+                <a 
+                  href="mailto:anish.kancherla@gmail.com" 
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  Email ↗
+                </a>
+              </div>
+            </section>
 
-      {/* Footer section with red background */}
-      <div className="w-full bg-[var(--brand-red)]">
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-4xl">
-            <div className="w-full px-4 py-12 sm:px-0 sm:py-16">
-              {/* Contact */}
-              <section id="contact">
-                <div className="flex justify-between items-center text-xl courier-prime text-white mb-12">
-                  <a
-                    href="https://github.com/anishkancherla"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    GitHub ↗
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/anish-kancherla-3b6aa6263"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    LinkedIn ↗
-                  </a>
-                  <a 
-                    href="mailto:anish.kancherla@gmail.com" 
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    Email ↗
-                  </a>
-                </div>
-              </section>
-
-              <Footer />
-            </div>
+            <Footer />
           </div>
         </div>
       </div>
